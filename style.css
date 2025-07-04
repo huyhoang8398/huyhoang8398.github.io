@@ -1,0 +1,259 @@
+/* General styles */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Kalam:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Kalam", cursive;
+  background-color: #f5f5dc; /* Beige paper-like background */
+  color: #3a3a3a;
+  line-height: 1.8;
+  margin: 0;
+  padding: 40px;
+  background-image: linear-gradient(to bottom, transparent 29px, #e0e0e0 30px);
+  background-size: 100% 30px;
+  overflow-x: hidden;
+}
+
+.notebook {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.left-page,
+.right-page {
+  flex: 1;
+  padding: 40px;
+  position: relative;
+}
+
+.left-page {
+  border-right: 1px dashed #ccc;
+}
+
+/* Spiral binding */
+.left-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  width: 40px;
+  background-image:
+    radial-gradient(circle at 10px 10px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 30px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 50px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 70px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 90px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 110px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 130px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 150px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 170px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 190px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 210px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 230px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 250px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 270px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 290px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 310px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 330px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 350px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 370px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 390px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 410px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 430px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 450px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 470px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 490px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 510px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 530px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 550px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 570px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 590px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 610px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 630px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 650px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 670px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 690px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 710px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 730px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 750px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 770px, #ccc 2px, transparent 3px),
+    radial-gradient(circle at 10px 790px, #ccc 2px, transparent 3px);
+  background-size: 20px 800px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #3b2f2f;
+  filter: sepia(0.4);
+}
+
+.contact-info i {
+  margin-right: 8px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  border-bottom: 2px solid #3a3a3a;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Education */
+.education .timeline-item {
+  margin-bottom: 20px;
+}
+
+.education .timeline-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  background-color: rgba(144, 238, 144, 0.4); /* Light green highlighter */
+  display: inline;
+  padding: 2px 5px;
+}
+
+.education .timeline-item .degree {
+  background-color: rgba(255, 182, 193, 0.4); /* Light pink highlighter */
+  display: inline;
+  padding: 2px 5px;
+}
+
+.skills li strong {
+  background-color: rgba(221, 160, 221, 0.4); /* Light purple highlighter */
+  padding: 2px 5px;
+}
+
+.education .timeline-item .date {
+  font-style: italic;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Experience */
+.experience .job {
+  margin-bottom: 30px;
+}
+
+.experience .job h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  background-color: rgba(173, 216, 230, 0.4); /* Light blue highlighter */
+  display: inline;
+  padding: 2px 5px;
+}
+
+.experience .job .title {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 0, 0.3); /* Highlighter yellow */
+  display: inline-block;
+  padding: 2px 5px;
+}
+
+.experience .job ul {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .notebook {
+    flex-direction: column;
+  }
+
+  .left-page,
+  .right-page {
+    border: none;
+  }
+
+  .left-page::before {
+    display: none; /* Hide spiral binding on small screens */
+  }
+}
+
+/* Photos Section */
+
+.photos .photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+  padding: 40px 0;
+  max-width: 100%;
+  max-height: 400px; /* Limit the visible height */
+  overflow-y: auto; /* Scroll if too many photos */
+}
+
+.photos img {
+  width: 150px; /* Smaller width */
+  height: 150px; /* Keep square */
+  object-fit: cover;
+  border: 3px solid #aaa;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+/* Add randomness with nth-child */
+.photos img:nth-child(odd) {
+  transform: rotate(-8deg);
+}
+.photos img:nth-child(even) {
+  transform: rotate(6deg);
+}
+.photos img:nth-child(3n) {
+  transform: rotate(4deg) translateY(10px);
+}
+.photos img:nth-child(4n) {
+  transform: rotate(-5deg) translateX(10px);
+}
+
+.photos img:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
+}
